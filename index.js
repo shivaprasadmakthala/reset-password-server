@@ -11,8 +11,6 @@ app.use(express.json());
 app.use(cors());
 connectDB();
 
-// app.use("/", userRouter);
-
 app.use("/user", userRouter);
 
 app.use(notFound);
